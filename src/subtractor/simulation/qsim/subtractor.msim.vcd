@@ -1,0 +1,122 @@
+$comment
+	File created using the following command:
+		vcd file subtractor.msim.vcd -direction
+$end
+$date
+	Mon Aug 13 18:40:38 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module subtractor_vlg_vec_tst $end
+$var reg 8 ! first [7:0] $end
+$var reg 8 " second [7:0] $end
+$var wire 1 # overflow $end
+$var wire 1 $ result [7] $end
+$var wire 1 % result [6] $end
+$var wire 1 & result [5] $end
+$var wire 1 ' result [4] $end
+$var wire 1 ( result [3] $end
+$var wire 1 ) result [2] $end
+$var wire 1 * result [1] $end
+$var wire 1 + result [0] $end
+$var wire 1 , sampler $end
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 Add0~0_combout $end
+$var wire 1 4 Add0~1 $end
+$var wire 1 5 Add0~2_combout $end
+$var wire 1 6 Add0~3 $end
+$var wire 1 7 Add0~4_combout $end
+$var wire 1 8 Add0~5 $end
+$var wire 1 9 Add0~6_combout $end
+$var wire 1 : Add0~7 $end
+$var wire 1 ; Add0~8_combout $end
+$var wire 1 < Add0~9 $end
+$var wire 1 = Add0~10_combout $end
+$var wire 1 > Add0~11 $end
+$var wire 1 ? Add0~12_combout $end
+$var wire 1 @ Add0~13 $end
+$var wire 1 A Add0~14_combout $end
+$var wire 1 B overflow~0_combout $end
+$var wire 1 C second~combout [7] $end
+$var wire 1 D second~combout [6] $end
+$var wire 1 E second~combout [5] $end
+$var wire 1 F second~combout [4] $end
+$var wire 1 G second~combout [3] $end
+$var wire 1 H second~combout [2] $end
+$var wire 1 I second~combout [1] $end
+$var wire 1 J second~combout [0] $end
+$var wire 1 K first~combout [7] $end
+$var wire 1 L first~combout [6] $end
+$var wire 1 M first~combout [5] $end
+$var wire 1 N first~combout [4] $end
+$var wire 1 O first~combout [3] $end
+$var wire 1 P first~combout [2] $end
+$var wire 1 Q first~combout [1] $end
+$var wire 1 R first~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 !
+b1 "
+0#
+1+
+1*
+0)
+0(
+0'
+0&
+0%
+0$
+x,
+0-
+1.
+x/
+10
+11
+12
+13
+04
+15
+16
+07
+18
+09
+0:
+0;
+1<
+0=
+0>
+0?
+1@
+0A
+1B
+1J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0R
+0Q
+1P
+0O
+0N
+0M
+0L
+0K
+$end
+#1000000
