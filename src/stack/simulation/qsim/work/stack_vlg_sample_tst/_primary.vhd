@@ -6,6 +6,7 @@ entity stack_vlg_sample_tst is
         pop             : in     vl_logic;
         push            : in     vl_logic;
         push_value      : in     vl_logic_vector(7 downto 0);
+        reset           : in     vl_logic;
         sampler_tx      : out    vl_logic
     );
 end stack_vlg_sample_tst;
