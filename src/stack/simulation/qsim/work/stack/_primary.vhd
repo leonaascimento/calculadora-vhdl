@@ -7,6 +7,8 @@ entity stack is
         pop             : in     vl_logic;
         push_value      : in     vl_logic_vector(7 downto 0);
         pop_value       : out    vl_logic_vector(7 downto 0);
+        empty           : out    vl_logic;
+        full            : out    vl_logic;
         error           : out    vl_logic
     );
 end stack;
