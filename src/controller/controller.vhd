@@ -25,7 +25,7 @@ begin
 		end if;
 	end process;
 	
-	process(state, enter, equals)
+	process(state, enter, equals, operand, result)
 	begin
 		case state is
 			when START =>

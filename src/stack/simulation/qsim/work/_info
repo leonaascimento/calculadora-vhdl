@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\leonardo.tripletech\source\repos\calculadora\src\stack\simulation\qsim
 vstack
-Z1 !s100 9=A=A>3?BPTz_N]4fc<l<3
-Z2 I3Lc2D?eAAj5Nz@dQ=j_bh0
-Z3 V5oggTLZGRQSeB3;9zoO4Q3
-Z4 dC:\Users\leonardo.tripletech\source\repos\calculadora-vhdl\src\stack\simulation\qsim
-Z5 w1534364261
+Z1 !s100 eU`zgWR^dJc`TGHQoTfW]2
+Z2 Ib2?HFUh5E?o0a[aXbRkJ<3
+Z3 V2Hbc0M0GnjHk_^ile0Z4F1
+Z4 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\stack\simulation\qsim
+Z5 w1534395564
 Z6 8stack.vo
 Z7 Fstack.vo
 L0 31
@@ -19,63 +19,63 @@ Z9 !s90 -work|work|stack.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1534364262.710000
+Z11 !s108 1534395565.771000
 Z12 !s107 stack.vo|
 !s101 -O0
 vstack_vlg_check_tst
 !i10b 1
-Z13 !s100 K:MYFAg:UDkPnFzJfbQF12
-Z14 I2b1NnGZnYLkRT3kion=Uf1
-Z15 V@TS:<WNXNjE[=k92R8cT43
+!s100 eL=nzAc@POAd7QGE8JG3]3
+IlmPODoZMAEcMHcFO70F7`3
+Z13 VV_dJ^mB^]cGjI0?1];AIf3
 R4
-R5
-Z16 8stack.vt
-Z17 Fstack.vt
-L0 65
+Z14 w1534395563
+Z15 8stack.vt
+Z16 Fstack.vt
+L0 61
 R8
 r1
 !s85 0
 31
-Z18 !s108 1534364262.856000
-Z19 !s107 stack.vt|
-Z20 !s90 -work|work|stack.vt|
+Z17 !s108 1534395565.974000
+Z18 !s107 stack.vt|
+Z19 !s90 -work|work|stack.vt|
 !s101 -O0
 R10
 vstack_vlg_sample_tst
 !i10b 1
-Z21 !s100 Joh?2m5]EO2`T`JhkgMO03
-Z22 ISVikC=;b8e<kQCG2AiQa<0
-Z23 VT<T>1TCU?_L@E]_lWb8ez0
+Z20 !s100 _m71>jz`P7`QI:;jG=?Hh0
+Z21 IG=hM3<3GP=_57hAWaMQYl1
+Z22 VdTK:6:ZUWFP1nEzSTgijC1
 R4
-R5
+R14
+R15
 R16
-R17
 L0 29
 R8
 r1
 !s85 0
 31
+R17
 R18
 R19
-R20
 !s101 -O0
 R10
 vstack_vlg_vec_tst
 !i10b 1
-Z24 !s100 oCm[P?EhgEejRJhL2oMm?1
-Z25 I110N]FC2gNIVjYfCV9`k33
-Z26 VmfMh7Z0iZ1J1ZoR_N@@?T2
+!s100 D`cFdDOk;]K;]4c9W4JGW2
+I;bz39Mog6`SIHhClIW[_80
+Z23 VmfMh7Z0iZ1J1ZoR_N@@?T2
 R4
-R5
+R14
+R15
 R16
-R17
-Z27 L0 814
+L0 489
 R8
 r1
 !s85 0
 31
+R17
 R18
 R19
-R20
 !s101 -O0
 R10
