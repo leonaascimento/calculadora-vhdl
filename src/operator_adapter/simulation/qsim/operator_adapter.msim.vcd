@@ -3,7 +3,7 @@ $comment
 		vcd file operator_adapter.msim.vcd -direction
 $end
 $date
-	Fri Aug 17 03:49:54 2018
+	Fri Aug 17 09:45:20 2018
 $end
 $version
 	ModelSim Version 10.1d
@@ -26,20 +26,27 @@ $var tri1 1 * devclrn $end
 $var tri1 1 + devpor $end
 $var tri1 1 , devoe $end
 $var wire 1 - clk~combout $end
-$var wire 1 . next_state.B~0_combout $end
-$var wire 1 / state.B~regout $end
-$var wire 1 0 Selector3~0_combout $end
-$var wire 1 1 out_operator~0_combout $end
-$var wire 1 2 next_state.B~0clkctrl_outclk $end
-$var wire 1 3 Selector2~0_combout $end
-$var wire 1 4 next_state.B~1_combout $end
-$var wire 1 5 Selector1~0_combout $end
-$var wire 1 6 aux_out_operator [1] $end
-$var wire 1 7 aux_out_operator [0] $end
-$var wire 1 8 in_operator~combout [3] $end
-$var wire 1 9 in_operator~combout [2] $end
-$var wire 1 : in_operator~combout [1] $end
-$var wire 1 ; in_operator~combout [0] $end
+$var wire 1 . state.A~0_combout $end
+$var wire 1 / state.C~regout $end
+$var wire 1 0 Selector4~0_combout $end
+$var wire 1 1 Selector3~0_combout $end
+$var wire 1 2 Selector3~1_combout $end
+$var wire 1 3 state.A~1_combout $end
+$var wire 1 4 state.A~regout $end
+$var wire 1 5 Selector3~2_combout $end
+$var wire 1 6 Selector2~0_combout $end
+$var wire 1 7 Selector2~1_combout $end
+$var wire 1 8 Selector2~2_combout $end
+$var wire 1 9 last_in_operator [3] $end
+$var wire 1 : last_in_operator [2] $end
+$var wire 1 ; last_in_operator [1] $end
+$var wire 1 < last_in_operator [0] $end
+$var wire 1 = in_operator~combout [3] $end
+$var wire 1 > in_operator~combout [2] $end
+$var wire 1 ? in_operator~combout [1] $end
+$var wire 1 @ in_operator~combout [0] $end
+$var wire 1 A last_out_operator [1] $end
+$var wire 1 B last_out_operator [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -47,8 +54,8 @@ $enddefinitions $end
 $dumpvars
 0!
 b0 "
-x$
-x#
+0$
+0#
 0%
 x&
 0'
@@ -58,26 +65,32 @@ x)
 1+
 1,
 0-
-1.
+0.
 0/
 00
-11
-12
-x3
-14
-x5
-x7
-x6
+01
+02
+03
+04
+05
+06
+07
+08
+0<
 0;
 0:
 09
-08
+0@
+0?
+0>
+0=
+0B
+0A
 $end
 #10000
 1!
 1-
 0&
-1/
 #20000
 0!
 0-
@@ -85,17 +98,16 @@ $end
 #30000
 b1000 "
 1!
-18
+1=
 1-
 0&
-15
-04
-01
-0.
-02
+19
 16
+12
+1.
+18
+15
 13
-17
 10
 1#
 1$
@@ -108,9 +120,19 @@ b1000 "
 1!
 1-
 0&
-0/
+14
+1/
+1A
+1B
+06
+05
+17
+11
 00
+15
+0$
 0%
+1$
 #60000
 0!
 0-
@@ -134,17 +156,12 @@ b1000 "
 #110000
 b0 "
 1!
-08
+0=
 1-
 0&
-05
-14
-11
-1.
-12
-15
-0#
-1#
+09
+02
+0.
 #120000
 0!
 0-
@@ -153,7 +170,7 @@ b0 "
 1!
 1-
 0&
-1/
+0/
 #140000
 0!
 0-
@@ -165,24 +182,21 @@ b0 "
 #160000
 b100 "
 0!
-19
+1>
 0-
 1&
-04
-0.
-02
-03
-10
-07
-0$
-1%
 #170000
 1!
 1-
 0&
-0/
-00
-0%
+1:
+16
+01
+1.
+05
+10
+0$
+1%
 #180000
 0!
 0-
@@ -191,6 +205,11 @@ b100 "
 1!
 1-
 0&
+1/
+0B
+06
+00
+0%
 #200000
 0!
 0-
@@ -234,21 +253,15 @@ b100 "
 #300000
 b0 "
 0!
-09
+0>
 0-
 1&
-05
-14
-1.
-12
-15
-0#
-1#
 #310000
 1!
 1-
 0&
-1/
+0:
+0.
 #320000
 0!
 0-
@@ -257,6 +270,7 @@ b0 "
 1!
 1-
 0&
+0/
 #340000
 0!
 0-
@@ -276,27 +290,23 @@ b0 "
 #380000
 b10 "
 0!
-1:
+1?
 0-
 1&
-01
-0.
-02
-13
-17
-05
-10
-06
-1$
-0#
-1%
 #390000
 1!
 1-
 0&
-0/
-00
-0%
+1;
+07
+12
+1.
+08
+15
+10
+0#
+1$
+1%
 #400000
 0!
 0-
@@ -305,6 +315,16 @@ b10 "
 1!
 1-
 0&
+1/
+0A
+1B
+05
+11
+00
+15
+0$
+0%
+1$
 #420000
 0!
 0-
@@ -320,12 +340,12 @@ b10 "
 #450000
 b0 "
 1!
-0:
+0?
 1-
 0&
-11
-1.
-12
+0;
+02
+0.
 #460000
 0!
 0-
@@ -334,7 +354,7 @@ b0 "
 1!
 1-
 0&
-1/
+0/
 #480000
 0!
 0-
@@ -370,23 +390,20 @@ b0 "
 #560000
 b1 "
 0!
-1;
+1@
 0-
 1&
-0.
-02
-03
-10
-07
-0$
-1%
 #570000
 1!
 1-
 0&
-0/
-00
-0%
+1<
+01
+1.
+05
+10
+0$
+1%
 #580000
 0!
 0-
@@ -395,6 +412,10 @@ b1 "
 1!
 1-
 0&
+1/
+0B
+00
+0%
 #600000
 0!
 0-
@@ -406,16 +427,15 @@ b1 "
 #620000
 b0 "
 0!
-0;
+0@
 0-
 1&
-1.
-12
 #630000
 1!
 1-
 0&
-1/
+0<
+0.
 #640000
 0!
 0-
@@ -424,6 +444,7 @@ b0 "
 1!
 1-
 0&
+0/
 #660000
 0!
 0-
