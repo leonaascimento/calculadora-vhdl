@@ -6,7 +6,6 @@ entity controller is
 	generic (bit_size : natural := 8);
 	port (clk, reset, set_operand, set_operator : in std_logic;
 			operand : in signed(bit_size - 1 downto 0);
-			operator : in std_logic_vector(1 downto 0);
 			result : in signed(bit_size - 1 downto 0);
 			stack_push, stack_pop : out std_logic;
 			stack_push_value : out signed(bit_size - 1 downto 0));
