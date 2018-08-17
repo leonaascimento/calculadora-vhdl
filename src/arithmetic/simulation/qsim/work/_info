@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\arithmetic\simulation\qsim
+varithmetic
+Z1 !s100 @BIZoO?1VHNK19MjOhPaP3
+Z2 I2@_E9EH>3;c^BZgX_kiX?1
+Z3 VnPiG<mPgloI4J0z6]=5nY3
+Z4 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\arithmetic\simulation\qsim
+Z5 w1534478876
+Z6 8arithmetic.vo
+Z7 Farithmetic.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|arithmetic.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1534478877.269000
+Z12 !s107 arithmetic.vo|
+!s101 -O0
+varithmetic_vlg_check_tst
+!i10b 1
+Z13 !s100 bBX1cUf8oaU6FEaizJnhj3
+Z14 I=5OB6Dz=U9Y=@hza3[NfF1
+Z15 V`>:118iYa^cejQng[E;MT1
+R4
+Z16 w1534478874
+Z17 8arithmetic.vt
+Z18 Farithmetic.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1534478877.579000
+Z20 !s107 arithmetic.vt|
+Z21 !s90 -work|work|arithmetic.vt|
+!s101 -O0
+R10
+varithmetic_vlg_sample_tst
+!i10b 1
+Z22 !s100 7zQl^n@8[0U:4;J55l6G33
+Z23 IHWTABEYifT0`LRJiWPiEI3
+Z24 VM5>=6Z^4KW4<6k>gWU2QP1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+varithmetic_vlg_vec_tst
+!i10b 1
+!s100 >F<YHZWP`egc8SHoOE^222
+I_YcQRlhAfFZSH9;>GmT]B1
+Z25 VVG?DE=8k]KcWOU34nR4S[0
+R4
+R16
+R17
+R18
+Z26 L0 308
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
