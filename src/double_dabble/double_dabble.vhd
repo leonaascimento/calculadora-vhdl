@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity double_dabble is
-	generic	(bin_size_in_bits : integer := 13;
+	generic	(bin_size_in_bits : integer := 8;
 				 bcd_size_in_bytes : integer := 4);			
 	port		(bin : in std_logic_vector(bin_size_in_bits - 1 downto 0);
 				 bcd : out std_logic_vector(bcd_size_in_bytes * 4 - 1 downto 0));
