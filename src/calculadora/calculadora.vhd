@@ -4,43 +4,59 @@ use ieee.numeric_std.all;
 
 entity calculadora is
 	generic (bit_size : natural := 8);
-	port (clk, reset, enter, equals : in std_logic;
+	port (clk, reset, set_operand, set_operator : in std_logic;
 			operand : in signed(bit_size - 1 downto 0);
 			operator : in std_logic_vector(1 downto 0);
-			push_value : buffer signed(bit_size - 1 downto 0);
+			result : out signed(bit_size - 1 downto 0);
 			overflow : out std_logic);
 end calculadora;
 
 architecture behavior of calculadora is
-	signal result, pop_first, pop_second : signed(bit_size - 1 downto 0);
-	signal push, pop : std_logic;
-	
-	component controller is
+	component adder is
 		generic (bit_size : natural := 8);
-		port (clk, reset, enter, equals : in std_logic;
-				operand : in signed(bit_size - 1 downto 0);
-				operator : in std_logic_vector(1 downto 0);
-				push_value : out signed(bit_size - 1 downto 0);
-				result : in signed(bit_size - 1 downto 0);
-				push, pop : out std_logic);
+		port (
+			first, second : in signed(bit_size - 1 downto 0);
+			result : out signed(bit_size - 1 downto 0);
+			overflow : out std_logic);
 	end component;
 	
 	component stack is
 		generic (stack_size : natural := 16; bit_size : natural := 8);
-		port (clk, reset : in std_logic;
-				push, pop : in std_logic;
-				push_value : in signed(bit_size - 1 downto 0);
-				pop_first, pop_second : out signed(bit_size - 1 downto 0));
+		port (
+			clk, reset : in std_logic;
+			push, pop : in std_logic;
+			push_value : in signed(bit_size - 1 downto 0);
+			pop_first, pop_second : out signed(bit_size - 1 downto 0));
 	end component;
 	
-	component adder is
+	component controller is
 		generic (bit_size : natural := 8);
-		port (first, second : in signed(bit_size - 1 downto 0);
-				result : out signed(bit_size - 1 downto 0);
-				overflow : out std_logic);
+		port (
+			clk, reset, set_operand, set_operator : in std_logic;
+			operand : in signed(bit_size - 1 downto 0);
+			operator : in std_logic_vector(1 downto 0);
+			result : in signed(bit_size - 1 downto 0);
+			stack_push, stack_pop : out std_logic;
+			stack_push_value : out signed(bit_size - 1 downto 0));
 	end component;
+	
+	signal aux_result, aux_first, aux_second, stack_push_value : signed(bit_size - 1 downto 0);
+	signal stack_push, stack_pop : std_logic;
 begin
-	c0: controller port map (clk, reset, enter, equals, operand, operator, push_value, result, push, pop);
-	s0: stack port map (clk, reset, push, pop, push_value, pop_first, pop_second);
-	a0: adder port map (pop_first, pop_second, result, overflow);
+	result <= aux_result;
+	
+	c0: controller port map(
+		clk, reset, set_operand, set_operator,
+		operand, operator,
+		aux_result,
+		stack_push, stack_pop, stack_push_value);
+		
+	s0: stack port map(
+		clk, reset, stack_push, stack_pop,
+		stack_push_value,
+		aux_first, aux_second);
+
+	a0: adder port map(
+		aux_first, aux_second,
+		aux_result, overflow);
 end behavior;

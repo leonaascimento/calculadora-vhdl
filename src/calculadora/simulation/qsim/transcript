@@ -1,4 +1,6 @@
 # do calculadora.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module calculadora
 # 
@@ -27,5 +29,5 @@
 # Loading work.calculadora_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : calculadora.vt(310)
+# ** Note: $finish    : calculadora.vt(318)
 #    Time: 1 us  Iteration: 0  Instance: /calculadora_vlg_vec_tst/tb_out
