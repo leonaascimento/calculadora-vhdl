@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\leonardo\source\repos\calculadora\src\subtractor\simulation\qsim
 vsubtractor
-Z1 !s100 SY8NB119neb2MEi`4<NQ:1
-Z2 I=@=d>n?NJcLZkSaAcQ[6_0
+Z1 !s100 h[RGlUDF2^4?4aKh[QAcR0
+Z2 I3FK3HCW8mQ[iiLeI;=Tj?2
 Z3 VK<B_`SOmdEJJ52PmYS4U52
 Z4 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\subtractor\simulation\qsim
-Z5 w1534711120
+Z5 w1534712468
 Z6 8subtractor.vo
 Z7 Fsubtractor.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|subtractor.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1534711121.876000
+Z11 !s108 1534712469.978000
 Z12 !s107 subtractor.vo|
 !s101 -O0
 vsubtractor_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 _c3MT]5KeUXHoQih:h2b<3
 Z14 INb@2SiNjG2QJFRaghABK=3
 Z15 V45;i:=A5F2nd=dfUV4AUL2
 R4
-Z16 w1534711119
+Z16 w1534712467
 Z17 8subtractor.vt
 Z18 Fsubtractor.vt
 L0 59
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1534711122.070000
+Z19 !s108 1534712470.179000
 Z20 !s107 subtractor.vt|
 Z21 !s90 -work|work|subtractor.vt|
 !s101 -O0
@@ -62,8 +62,8 @@ R21
 R10
 vsubtractor_vlg_vec_tst
 !i10b 1
-!s100 CfZi4HHg[Hel9ABi2ecJ>0
-II@M>oJ1ei6?Bg5J7RTi^e2
+!s100 OSFmGWFfP?4z<?GK4S]:a2
+In9@Wo3]XRVTDLka[<0DYh1
 Z25 VPoa[0gEhocWk^Z;bR>h3=2
 R4
 R16
