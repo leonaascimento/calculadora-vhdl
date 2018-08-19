@@ -502,11 +502,10 @@ set_location_assignment PIN_Y7 -to SRAM_LB_N
 set_location_assignment PIN_T8 -to SRAM_OE_N
 set_location_assignment PIN_W7 -to SRAM_UB_N
 set_location_assignment PIN_AA10 -to SRAM_WE_N
+set_global_assignment -name VHDL_FILE ../arithmetic/math.vhd
 set_global_assignment -name VHDL_FILE ../pwm_controller/pwm_controller.vhd
-set_global_assignment -name VHDL_FILE ../pwm_module/pwm_module.vhd
 set_global_assignment -name VHDL_FILE ../display7seg/display7seg.vhd
 set_global_assignment -name VHDL_FILE ../double_dabble/double_dabble.vhd
-set_global_assignment -name VHDL_FILE ../latch_d/latch_d.vhd
 set_global_assignment -name VHDL_FILE ../operator_adapter/operator_adapter.vhd
 set_global_assignment -name VHDL_FILE ../arithmetic/arithmetic.vhd
 set_global_assignment -name VHDL_FILE ../divider/divider.vhd

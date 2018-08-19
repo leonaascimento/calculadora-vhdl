@@ -3,12 +3,18 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity controller is
-	generic (bit_size : natural := 8);
-	port (clk, reset, set_operand, set_operator : in std_logic;
-			operand : in signed(bit_size - 1 downto 0);
-			result : in signed(bit_size - 1 downto 0);
-			stack_push, stack_pop : out std_logic;
-			stack_push_value : out signed(bit_size - 1 downto 0));
+	generic (
+		sizeof_operand : natural := 8);
+	port (
+		clk              : in std_logic;
+		reset            : in std_logic;
+		set_operand      : in std_logic;
+		set_operator     : in std_logic;
+		operand          : in signed(sizeof_operand - 1 downto 0);
+		result           : in signed(sizeof_operand - 1 downto 0);
+		stack_push       : out std_logic;
+		stack_pop        : out std_logic;
+		stack_push_value : out signed(sizeof_operand - 1 downto 0));
 end controller;
 
 architecture behavior of controller is

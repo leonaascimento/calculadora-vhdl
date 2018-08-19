@@ -34,5 +34,5 @@
 # Loading work.calculadora_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : calculadora.vt(3058)
+# ** Note: $finish    : calculadora.vt(2682)
 #    Time: 1 us  Iteration: 0  Instance: /calculadora_vlg_vec_tst/tb_out

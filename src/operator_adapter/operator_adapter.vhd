@@ -2,16 +2,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity operator_adapter is
-	port (clk : in std_logic;
-			in_operator : in std_logic_vector(3 downto 0);
-			set_operator : out std_logic;
-			out_operator : buffer std_logic_vector(1 downto 0));
+	port (
+		clk          : in std_logic;
+		in_operator  : in std_logic_vector(3 downto 0);
+		set_operator : out std_logic;
+		out_operator : buffer std_logic_vector(1 downto 0));
 end operator_adapter;
 
 architecture behavior of operator_adapter is
 	type state_type is (A, B, C);
 	signal state, next_state : state_type;
-	signal last_in_operator : std_logic_vector(3 downto 0);
+	signal last_in_operator  : std_logic_vector(3 downto 0);
 	signal last_out_operator : std_logic_vector(1 downto 0);
 begin
 	process(clk)

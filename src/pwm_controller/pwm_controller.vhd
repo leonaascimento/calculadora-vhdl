@@ -4,17 +4,19 @@ use ieee.numeric_std.all;
 
 entity pwm_controller is
 	generic (
-		duty_size : natural := 8);
+		sizeof_duty : natural := 8);
 	port (
-		clk, enable, reset : in std_logic;
+		clk      : in std_logic;
+		enable   : in std_logic;
+		reset    : in std_logic;
 		set_duty : in std_logic;
-		duty : in std_logic_vector(duty_size - 1 downto 0);
-		pwm_out : out std_logic);
+		duty     : in std_logic_vector(sizeof_duty - 1 downto 0);
+		pwm_out  : out std_logic);
 end pwm_controller;
 
 architecture behavior of pwm_controller is
-	signal current_duty : std_logic_vector(duty_size - 1 downto 0) := (others => '1');
-	signal counter : unsigned(duty_size - 1 downto 0);
+	signal current_duty : std_logic_vector(sizeof_duty - 1 downto 0) := (others => '1');
+	signal counter      : unsigned(sizeof_duty - 1 downto 0);
 begin
 	update_duty: process(clk, set_duty)
 	begin
