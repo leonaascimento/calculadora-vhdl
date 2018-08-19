@@ -21,6 +21,7 @@ entity calculadora is
         aux_second      : out    vl_logic_vector(7 downto 0);
         stack_push_value: out    vl_logic_vector(7 downto 0);
         stack_push      : out    vl_logic;
-        stack_pop       : out    vl_logic
+        stack_pop       : out    vl_logic;
+        pwm_bar         : out    vl_logic_vector(6 downto 0)
     );
 end calculadora;

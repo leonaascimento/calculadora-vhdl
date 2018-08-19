@@ -78,7 +78,7 @@ architecture behavior of calculadora is
 	signal aux_bcd : std_logic_vector(bcd_size_in_bytes * 4 - 1 downto 0);
 	signal aux_hex3, aux_hex2, aux_hex1, aux_hex0 : std_logic_vector (6 downto 0);
 	signal pwm_out : std_logic;
-	signal pwm_bar : std_logic_vector (0 to 6);
+	signal pwm_bar : std_logic_vector (6 downto 0);
 	
 	component double_dabble is
 		generic	(bin_size_in_bits : integer := 8;
@@ -104,7 +104,7 @@ begin
 	
 	pwm0: pwm_module port map(
 		clk => clock_50,
-		enable => '0',
+		enable => '1',
 		reset => '0',
 		duty => pwm_duty,
 		pwm_out => pwm_out);
@@ -159,7 +159,7 @@ begin
 
 	opa0: operator_adapter port map(
 		clk				=> clock_50,
-		in_operator		=> key,
+		in_operator		=> not key,
 		set_operator	=> set_operator,
 		out_operator	=> operator);
 		

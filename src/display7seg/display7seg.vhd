@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity display7seg is
 	port (bcd : in std_logic_vector (3 downto 0);
-			seg : out std_logic_vector (0 to 6));
+			seg : out std_logic_vector (6 downto 0));
 end display7seg;
 
 architecture behavior of display7seg is
