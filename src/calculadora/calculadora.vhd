@@ -1,3 +1,6 @@
+library nightjar;
+use nightjar.common.all;
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -18,85 +21,16 @@ entity calculadora is
 			set_operator : buffer std_logic;
 			aux_result, aux_first, aux_second : buffer signed(bit_size - 1 downto 0);
 			stack_push_value : buffer signed(bit_size - 1 downto 0);
-			stack_push, stack_pop : buffer std_logic);
+			stack_push, stack_pop : buffer std_logic;
+			
+			aux_bcd : buffer std_logic_vector(bcd_size_in_bytes * 4 - 1 downto 0);
+			aux_hex3, aux_hex2, aux_hex1, aux_hex0 : buffer std_logic_vector (6 downto 0);
+			pwm_out : buffer std_logic;
+			pwm_bar : buffer std_logic_vector (6 downto 0)
+			);
 end calculadora;
 
 architecture behavior of calculadora is
-	component arithmetic is
-		generic (bit_size : natural := 8);
-		port (
-			op : in std_logic_vector(1 downto 0);
-			first, second : in signed(bit_size - 1 downto 0);
-			result : out signed(bit_size - 1 downto 0);
-			overflow : out std_logic);
-	end component;
-	
-	component latch_d is
-		generic (bit_size : natural := 8);
-		port (enable : in std_logic;
-				d : in std_logic_vector(bit_size - 1 downto 0);
-				q : out std_logic_vector(bit_size - 1 downto 0));
-	end component;
-	
-	component stack is
-		generic (stack_size : natural := 16; bit_size : natural := 8);
-		port (
-			clk, reset : in std_logic;
-			push, pop : in std_logic;
-			push_value : in signed(bit_size - 1 downto 0);
-			pop_first, pop_second : out signed(bit_size - 1 downto 0));
-	end component;
-	
-	component operator_adapter is
-	port (
-		clk : in std_logic;
-		in_operator : in std_logic_vector(3 downto 0);
-		set_operator : out std_logic;
-		out_operator : out std_logic_vector(1 downto 0));
-	end component;
-
-	component controller is
-		generic (bit_size : natural := 8);
-		port (
-			clk, reset, set_operand, set_operator : in std_logic;
-			operand : in signed(bit_size - 1 downto 0);
-			result : in signed(bit_size - 1 downto 0);
-			stack_push, stack_pop : out std_logic;
-			stack_push_value : out signed(bit_size - 1 downto 0));
-	end component;
-	
-	--signal result : signed(bit_size - 1 downto 0);
-	--signal overflow : std_logic;
-	--signal pwm_duty : std_logic_vector(bit_size - 1 downto 0);
-	
-	--signal stack_push_value : signed(bit_size - 1 downto 0);
-	--signal stack_push, stack_pop : std_logic;
-	--signal operator : std_logic_vector(1 downto 0);
-	--signal set_operator : std_logic;
-	--signal aux_result, aux_first, aux_second : signed(bit_size - 1 downto 0);
-	
-	signal aux_bcd : std_logic_vector(bcd_size_in_bytes * 4 - 1 downto 0);
-	signal aux_hex3, aux_hex2, aux_hex1, aux_hex0 : std_logic_vector (6 downto 0);
-	signal pwm_out : std_logic;
-	signal pwm_bar : std_logic_vector (6 downto 0);
-	
-	component double_dabble is
-		generic	(bin_size_in_bits : integer := 8;
-					 bcd_size_in_bytes : integer := 4);			
-		port		(bin : in std_logic_vector(bin_size_in_bits - 1 downto 0);
-					 bcd : out std_logic_vector(bcd_size_in_bytes * 4 - 1 downto 0));
-	end component;
-	
-	component display7seg is
-		port (bcd : in std_logic_vector (3 downto 0);
-				seg : out std_logic_vector (0 to 6));
-	end component;
-	
-	component pwm_module is
-		port (clk, enable, reset : in std_logic;
-				duty : in std_logic_vector (7 downto 0);
-				pwm_out : out std_logic);
-	end component;
 begin
 	ledg <= (others => overflow);
 	ledr <= (others => aux_result(aux_result'high));
