@@ -25,5 +25,5 @@
 # Loading work.multiplier_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : multiplier.vt(1540)
+# ** Note: $finish    : multiplier.vt(302)
 #    Time: 1 us  Iteration: 0  Instance: /multiplier_vlg_vec_tst/tb_out

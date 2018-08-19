@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\leonardo\source\repos\calculadora\src\multiplier\simulation\qsim
 vmultiplier
-Z1 !s100 MP?iCe2o7Cd[>GfZQBXXZ3
-Z2 I@>G[04NUD0KG=bQFfd5Jo3
-Z3 V;oF_3eOdchiX5=7:7g2b00
+Z1 !s100 B3`PGPRc9md3KoRoFSnb]0
+Z2 IFfXBIl>CeTWngg?i?XWk30
+Z3 V1d:H[M73FV=0GcW6bh0?R2
 Z4 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\multiplier\simulation\qsim
-Z5 w1534693867
+Z5 w1534704848
 Z6 8multiplier.vo
 Z7 Fmultiplier.vo
 L0 31
@@ -19,16 +19,16 @@ Z9 !s90 -work|work|multiplier.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1534693869.042000
+Z11 !s108 1534704849.785000
 Z12 !s107 multiplier.vo|
 !s101 -O0
 vmultiplier_vlg_check_tst
 !i10b 1
-Z13 !s100 ocdY9oAPZ2a^2`Z9RMg392
-Z14 Inf]iH6@YoCUQmkHVV6E8B3
-Z15 VK0>GIYLELi6Qo``zSZzzn0
+Z13 !s100 d>9`LAV4ZHK[>mYONSIje1
+Z14 IN3b3DWednR`a9KAmzQRVH1
+Z15 VG]6`YPUdz5BcbQFn<[Hg`2
 R4
-Z16 w1534693866
+Z16 w1534704847
 Z17 8multiplier.vt
 Z18 Fmultiplier.vt
 L0 59
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1534693869.240000
+Z19 !s108 1534704849.982000
 Z20 !s107 multiplier.vt|
 Z21 !s90 -work|work|multiplier.vt|
 !s101 -O0
@@ -62,14 +62,14 @@ R21
 R10
 vmultiplier_vlg_vec_tst
 !i10b 1
-!s100 PV;4;k<88IB=]3omQ`7C_1
-I_4=AR]zg3SI^OoQRMHX0]0
+!s100 Mi]mo7@G<f87oE3PbkB4a0
+I`D]U=0M3X@zzi8]W32ehV3
 Z25 V2;[nQAL>5:S>7m<1n;=d31
 R4
 R16
 R17
 R18
-Z26 L0 1544
+Z26 L0 306
 R8
 r1
 !s85 0

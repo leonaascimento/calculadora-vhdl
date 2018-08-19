@@ -148,7 +148,7 @@ begin
 		generic map(
 			sizeof_operand => sizeof_operand)
 		port map(
-			op       => operator,
+			operator => operator,
 			first    => first_operand,
 			second   => second_operand,
 			result   => operation_result,

@@ -7,7 +7,7 @@ package math is
 		generic (
 			sizeof_operand : natural := 8);
 		port (
-			op            : in  std_logic_vector(1 downto 0);
+			operator      : in  std_logic_vector(1 downto 0);
 			first, second : in  signed(sizeof_operand - 1 downto 0);
 			result        : out signed(sizeof_operand - 1 downto 0);
 			overflow      : out std_logic);

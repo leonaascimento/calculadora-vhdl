@@ -17,7 +17,6 @@
 # Loading work.calculadora_vlg_vec_tst
 # Loading work.calculadora
 # Loading cycloneii_ver.cycloneii_lcell_comb
-# Loading cycloneii_ver.cycloneii_mac_out
 # Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
@@ -26,10 +25,6 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading cycloneii_ver.cycloneii_mac_mult
-# Loading cycloneii_ver.cycloneii_mac_data_reg
-# Loading cycloneii_ver.cycloneii_mac_sign_reg
-# Loading cycloneii_ver.cycloneii_mac_mult_internal
 # Loading work.calculadora_vlg_sample_tst
 # Loading work.calculadora_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
