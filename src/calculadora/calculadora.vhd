@@ -16,7 +16,7 @@ entity calculadora is
 			
 			result : buffer signed(bit_size - 1 downto 0);
 			overflow : buffer std_logic;
-			pwm_duty : buffer std_logic_vector(bit_size - 1 downto 0);
+			pwm_duty : buffer std_logic_vector(bit_size - 1 downto 0) := (others => '1');
 			operator : buffer std_logic_vector(1 downto 0);
 			set_operator : buffer std_logic;
 			aux_result, aux_first, aux_second : buffer signed(bit_size - 1 downto 0);
@@ -26,7 +26,7 @@ entity calculadora is
 			aux_bcd : buffer std_logic_vector(bcd_size_in_bytes * 4 - 1 downto 0);
 			aux_hex3, aux_hex2, aux_hex1, aux_hex0 : buffer std_logic_vector (6 downto 0);
 			pwm_out : buffer std_logic;
-			pwm_bar : buffer std_logic_vector (6 downto 0)
+			pwm_out_vector : buffer std_logic_vector (6 downto 0)
 			);
 end calculadora;
 
@@ -36,12 +36,12 @@ begin
 	ledr <= (others => aux_result(aux_result'high));
 	result <= aux_result;
 	
-	pwm0: pwm_module port map(
-		clk => clock_50,
-		enable => '1',
-		reset => '0',
-		duty => pwm_duty,
-		pwm_out => pwm_out);
+	pwm_out_vector <= (others => pwm_out);
+	
+	hex0 <= not (aux_hex0 and pwm_out_vector);
+	hex1 <= not (aux_hex1 and pwm_out_vector);
+	hex2 <= not (aux_hex2 and pwm_out_vector);
+	hex3 <= not (aux_hex3 and pwm_out_vector);
 	
 	dd0: double_dabble port map(
 		bin => std_logic_vector(unsigned(aux_result)),
@@ -59,17 +59,14 @@ begin
 	ds3: display7seg port map(
 		bcd => aux_bcd(15 downto 12),
 		seg => aux_hex3);
-		
-	pwm_bar <= (others => pwm_out);
-	hex0 <= not (aux_hex0 and pwm_bar);
-	hex1 <= not (aux_hex1 and pwm_bar);
-	hex2 <= not (aux_hex2 and pwm_bar);
-	hex3 <= not (aux_hex3 and pwm_bar);
 	
-	mem0: latch_d port map(
-		enable	=> sw(9),
-		d			=> sw(8 downto 1),
-		q			=> pwm_duty);
+	pwm0: pwm_controller port map(
+		clk => clock_50,
+		enable => '1',
+		reset => '0',
+		set_duty => sw(9),
+		duty => sw(8 downto 1),
+		pwm_out => pwm_out);
 	
 	ctrl0: controller port map(
 		clk 					=> clock_50,

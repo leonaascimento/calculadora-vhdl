@@ -22,6 +22,12 @@ entity calculadora is
         stack_push_value: out    vl_logic_vector(7 downto 0);
         stack_push      : out    vl_logic;
         stack_pop       : out    vl_logic;
-        pwm_bar         : out    vl_logic_vector(6 downto 0)
+        aux_bcd         : out    vl_logic_vector(15 downto 0);
+        aux_hex3        : out    vl_logic_vector(6 downto 0);
+        aux_hex2        : out    vl_logic_vector(6 downto 0);
+        aux_hex1        : out    vl_logic_vector(6 downto 0);
+        aux_hex0        : out    vl_logic_vector(6 downto 0);
+        pwm_out         : out    vl_logic;
+        pwm_out_vector  : out    vl_logic_vector(6 downto 0)
     );
 end calculadora;

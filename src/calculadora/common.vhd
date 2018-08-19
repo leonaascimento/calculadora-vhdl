@@ -3,6 +3,16 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 package common is
+	component pwm_controller is
+		generic (
+			duty_size : natural := 8);
+		port (
+			clk, enable, reset : in std_logic;
+			set_duty : in std_logic;
+			duty : in std_logic_vector(duty_size - 1 downto 0);
+			pwm_out : out std_logic);
+	end component;
+
 	component arithmetic is
 		generic (bit_size : natural := 8);
 		port (

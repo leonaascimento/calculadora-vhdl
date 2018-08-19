@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\pwm_module\simulation\qsim
+vpwm_module
+Z1 !s100 =`[T?hTce[lY7laSO;C?d3
+Z2 IoGfTVG8HK<LcTc[a^bFAo2
+Z3 VaH9D_0mGhR>`94id00gYE2
+Z4 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\pwm_module\simulation\qsim
+Z5 w1534654556
+Z6 8pwm_module.vo
+Z7 Fpwm_module.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|pwm_module.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1534654557.730000
+Z12 !s107 pwm_module.vo|
+!s101 -O0
+vpwm_module_vlg_check_tst
+!i10b 1
+Z13 !s100 hXZ8RH77<Z;<UVET5Jg:b3
+Z14 I;k^7nKo:G9HAaN4dmhTF>1
+Z15 VnQG2E>9k5J=5[>zeo?Je^2
+R4
+Z16 w1534654555
+Z17 8pwm_module.vt
+Z18 Fpwm_module.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1534654557.966000
+Z20 !s107 pwm_module.vt|
+Z21 !s90 -work|work|pwm_module.vt|
+!s101 -O0
+R10
+vpwm_module_vlg_sample_tst
+!i10b 1
+Z22 !s100 45zfT?Y9^Xf10nEWH?bZW3
+Z23 Ia^n4__OQ]3G9n2EFOKDzO0
+Z24 V7kNC97mEPd=BL;d2kh2gM0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vpwm_module_vlg_vec_tst
+!i10b 1
+!s100 ^@<Lf?Q_Y>=9NYNZJ_6dd3
+I>VkkP?B1Y6IUNV@BgU<SD2
+Z25 VC]44Pfc_<oQg3?`blF8_O1
+R4
+R16
+R17
+R18
+Z26 L0 158
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
