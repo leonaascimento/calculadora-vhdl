@@ -12,11 +12,22 @@ entity subtractor is
 end subtractor;
 
 architecture behavior of subtractor is
-	signal aux_result : signed(sizeof_operand - 1 downto 0);
+	signal diff : signed(sizeof_operand - 1 downto 0);
+	signal borrow : std_logic_vector(sizeof_operand + 1 downto 0) := (others => '1');
 begin
-	aux_result <= first - second;
-	result <= aux_result;
-	
-	overflow <= (first(first'high) xor second(second'high)) and
-					(first(first'high) xor aux_result(aux_result'high));
+	result <= diff;
+	overflow <= (first(first'high) xor second(second'high))
+		and (first(first'high) xor diff(diff'high));
+					
+	process(first, second, borrow)
+	begin
+		for i in diff'reverse_range loop
+			diff(i) <= first(i)
+				xor (not second(i) xor borrow(i));
+				
+			borrow(i + 1) <= (not second(i) and borrow(i))
+				or (not second(i) and first(i))
+				or (borrow(i) and first(i));
+		end loop;
+	end process;
 end behavior;

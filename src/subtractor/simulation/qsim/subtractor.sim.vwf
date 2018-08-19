@@ -344,7 +344,7 @@ TRANSITION_LIST("result[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("result[1]")
@@ -368,7 +368,7 @@ TRANSITION_LIST("second[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("second[1]")
@@ -392,7 +392,7 @@ TRANSITION_LIST("first[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("first[6]")
@@ -432,7 +432,7 @@ TRANSITION_LIST("overflow")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("result[7]")
@@ -448,7 +448,7 @@ TRANSITION_LIST("result[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("result[5]")
@@ -456,7 +456,7 @@ TRANSITION_LIST("result[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("result[4]")
@@ -464,7 +464,7 @@ TRANSITION_LIST("result[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("result[3]")
@@ -472,7 +472,7 @@ TRANSITION_LIST("result[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("second[7]")

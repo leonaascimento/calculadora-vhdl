@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/13/2018 18:40:36"
+// Generated on "08/19/2018 17:38:39"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    subtractor
 // 
@@ -325,7 +325,7 @@ subtractor i1 (
 // first[ 7 ]
 initial
 begin
-	first[7] = 1'b0;
+	first[7] = 1'b1;
 end 
 // first[ 6 ]
 initial
@@ -390,7 +390,7 @@ end
 // second[ 2 ]
 initial
 begin
-	second[2] = 1'b0;
+	second[2] = 1'b1;
 end 
 // second[ 1 ]
 initial
