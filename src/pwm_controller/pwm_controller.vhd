@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- realizar pwm para os displays
 entity pwm_controller is
 	generic (
 		sizeof_duty : natural := 8);

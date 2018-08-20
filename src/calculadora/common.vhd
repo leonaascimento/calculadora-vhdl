@@ -43,13 +43,16 @@ package common is
 			sizeof_stack : natural := 16;
 			sizeof_value : natural := 8);
 		port (
-			clk        : in  std_logic;
-			reset      : in  std_logic;
-			push       : in  std_logic;
-			pop        : in  std_logic;
-			push_value : in  signed(sizeof_value - 1 downto 0);
-			pop_first  : out signed(sizeof_value - 1 downto 0);
-			pop_second : out signed(sizeof_value - 1 downto 0));
+			clk         : in  std_logic;
+			reset       : in  std_logic;
+			push        : in  std_logic;
+			pop         : in  std_logic;
+			push_value  : in  signed(sizeof_value - 1 downto 0);
+			pop_first   : out signed(sizeof_value - 1 downto 0);
+			pop_second  : out signed(sizeof_value - 1 downto 0);
+			empty, full : out std_logic;
+			error       : out std_logic;
+			status      : buffer std_logic_vector(sizeof_stack - 1 downto 0));
 	end component;
 
 	component controller is

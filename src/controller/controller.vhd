@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- controlar estado da calculadora
 entity controller is
 	generic (
 		sizeof_operand : natural := 8);
@@ -21,7 +22,7 @@ architecture behavior of controller is
 	type state_type is (A, B, C);
 	signal state, next_state : state_type;
 begin
-	process(clk, reset)
+	state_register: process(clk, reset)
 	begin
 		if (reset = '1') then
 			state <= A;
@@ -30,7 +31,7 @@ begin
 		end if;
 	end process;
 	
-	process(state, set_operand, set_operator, operand, result)
+	next_state_with_output_func: process(state, set_operand, set_operator, operand, result)
 	begin
 		case state is
 			when A =>

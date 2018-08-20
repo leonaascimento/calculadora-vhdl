@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- transformar codigo bcd para display de 7 segmentos
 entity display7seg is
 	port (
 		bcd : in  std_logic_vector(3 downto 0);

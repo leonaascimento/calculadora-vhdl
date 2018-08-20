@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- realizar multiplicacao
 entity multiplier is
 	generic (
 		sizeof_operand : natural := 8);
@@ -15,6 +16,14 @@ architecture behavior of multiplier is
 	signal product  : signed(sizeof_operand * 2 - 1 downto 0);
 	signal actual   : signed(sizeof_operand * 2 - 1 downto 0);
 begin
+	result <= product(product'high) & product(result'high - 1 downto 0);
+	
+	actual(product'high downto result'high) <= (others => product(product'high));
+	actual(result'high - 1 downto 0) <= product(result'high - 1 downto 0);
+	
+	overflow <= '1' when actual /= product else
+					'0';
+
 	process(first, second)
 		variable A, S, P : unsigned(first'length + second'length + 1 downto 0);
 		variable i       : natural;
@@ -39,12 +48,4 @@ begin
 		
 		product <= signed(P(P'high - 1 downto 1));
 	end process;
-
-	result <= product(product'high) & product(result'high - 1 downto 0);
-	
-	actual(product'high downto result'high) <= (others => product(product'high));
-	actual(result'high - 1 downto 0) <= product(result'high - 1 downto 0);
-	
-	overflow <= '1' when actual /= product else
-					'0';
 end behavior;

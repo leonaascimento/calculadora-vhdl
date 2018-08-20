@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- realizar subtracao
 entity subtractor is
 	generic (
 		sizeof_operand : natural := 8);

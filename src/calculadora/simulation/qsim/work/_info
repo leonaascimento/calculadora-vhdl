@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\calculadora\simulation\qsim
 vcalculadora
-Z1 I35zRFXE9zBRBkTzAC@_WL3
+Z1 IBb;OH0P^<H3d6J7Z:A6ao0
 Z2 VfO^Uk2Y`0040LC:z>zU0W0
 Z3 dC:\Users\leonardo\source\repos\calculadora-vhdl\src\calculadora\simulation\qsim
-Z4 w1534712582
+Z4 w1534735682
 Z5 8calculadora.vo
 Z6 Fcalculadora.vo
 L0 31
@@ -17,9 +17,9 @@ r1
 Z8 !s90 -work|work|calculadora.vo|
 Z9 o-work work -O0
 !i10b 1
-Z10 !s100 ;>dgehn?Z;=ZKUSJWS3AC3
+Z10 !s100 <7]^W`@4TZ]W8kH;MlEZV1
 !s85 0
-Z11 !s108 1534712584.153000
+Z11 !s108 1534735684.173000
 Z12 !s107 calculadora.vo|
 !s101 -O0
 vcalculadora_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 >PC2B=3b;F5H8mcjVa=i]3
 Z14 IZofH;>I<53HXJWPfl_DbX1
 Z15 VbOc_6JU@iT_VO:e`X^4a20
 R3
-Z16 w1534712581
+Z16 w1534735681
 Z17 8calculadora.vt
 Z18 Fcalculadora.vt
 L0 61
@@ -36,7 +36,7 @@ R7
 r1
 !s85 0
 31
-Z19 !s108 1534712584.641000
+Z19 !s108 1534735684.625000
 Z20 !s107 calculadora.vt|
 Z21 !s90 -work|work|calculadora.vt|
 !s101 -O0
@@ -62,8 +62,8 @@ R21
 R9
 vcalculadora_vlg_vec_tst
 !i10b 1
-Z25 !s100 c=JH:gVEhV@`l7H?J?kRE3
-Z26 IB;3lb@86z?8W9WC?^E7ZD0
+Z25 !s100 2N=FWLB6ZAjGC1WM@ido=0
+Z26 IVC1PC]Xdi@U8QgPo=iTQ[2
 Z27 V7e6::2V0=KmA]@S8K<zNJ3
 R3
 R16
