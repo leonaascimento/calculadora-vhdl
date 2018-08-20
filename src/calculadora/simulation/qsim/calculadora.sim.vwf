@@ -1809,6 +1809,132 @@ TRANSITION_LIST("sw[1]")
 		LEVEL 0 FOR 970.0;
 	}
 }
+TRANSITION_LIST("operator[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 459.0;
+	}
+}
+TRANSITION_LIST("operator[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 182.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 575.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 39.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 62.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 575.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 735.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 222.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 575.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 139.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 142.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 655.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 29.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 39.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 99.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 62.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 158.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 575.0;
+	}
+}
+TRANSITION_LIST("stack_push_value[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 999.0;
+	}
+}
 TRANSITION_LIST("hex0[6]")
 {
 	NODE
@@ -2284,6 +2410,76 @@ TRANSITION_LIST("ledr[0]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
+TRANSITION_LIST("pwm_out_vector[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("pwm_out_vector[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("pwm_out_vector[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("pwm_out_vector[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("pwm_out_vector[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("pwm_out_vector[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("pwm_out_vector[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
 TRANSITION_LIST("sw[9]")
 {
 	NODE
@@ -2311,6 +2507,122 @@ TRANSITION_LIST("sw[0]")
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 790.0;
+	}
+}
+TRANSITION_LIST("bcd_result[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("bcd_result[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("bcd_result[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("bcd_result[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 343.0;
+		LEVEL 1 FOR 78.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 118.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("bcd_result[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("bcd_result[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 577.0;
+	}
+}
+TRANSITION_LIST("bcd_result[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 657.0;
+	}
+}
+TRANSITION_LIST("bcd_result[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 78.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 577.0;
+	}
+}
+TRANSITION_LIST("bcd_result[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("bcd_result[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 118.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("bcd_result[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 421.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("bcd_result[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 TRANSITION_LIST("clock_50")
@@ -3318,6 +3630,586 @@ TRANSITION_LIST("clock_50")
 		LEVEL 1 FOR 1.0;
 		LEVEL 0 FOR 1.0;
 		LEVEL 1 FOR 1.0;
+	}
+}
+TRANSITION_LIST("first_operand[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("first_operand[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 657.0;
+	}
+}
+TRANSITION_LIST("first_operand[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 657.0;
+	}
+}
+TRANSITION_LIST("first_operand[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("first_operand[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("first_operand[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 423.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 457.0;
+	}
+}
+TRANSITION_LIST("first_operand[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 343.0;
+		LEVEL 1 FOR 657.0;
+	}
+}
+TRANSITION_LIST("first_operand[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex0_result[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("hex0_result[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 421.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 577.0;
+	}
+}
+TRANSITION_LIST("hex0_result[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 341.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 657.0;
+	}
+}
+TRANSITION_LIST("hex0_result[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 341.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 657.0;
+	}
+}
+TRANSITION_LIST("hex0_result[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 421.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 577.0;
+	}
+}
+TRANSITION_LIST("hex0_result[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 423.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 459.0;
+	}
+}
+TRANSITION_LIST("hex0_result[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 341.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 657.0;
+	}
+}
+TRANSITION_LIST("hex1_result[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 577.0;
+	}
+}
+TRANSITION_LIST("hex1_result[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex1_result[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 263.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 577.0;
+	}
+}
+TRANSITION_LIST("hex1_result[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex1_result[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex1_result[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 263.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 78.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 577.0;
+	}
+}
+TRANSITION_LIST("hex1_result[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex2_result[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex2_result[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 343.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 459.0;
+	}
+}
+TRANSITION_LIST("hex2_result[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 343.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 459.0;
+	}
+}
+TRANSITION_LIST("hex2_result[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 343.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 459.0;
+	}
+}
+TRANSITION_LIST("hex2_result[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex2_result[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex2_result[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 343.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 459.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("hex3_result_sign[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("operation_overflow")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 657.0;
+	}
+}
+TRANSITION_LIST("operation_result[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("operation_result[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 341.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 118.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("operation_result[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 78.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 198.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("operation_result[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 78.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 577.0;
+	}
+}
+TRANSITION_LIST("operation_result[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 423.0;
+		LEVEL 1 FOR 118.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("operation_result[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 343.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 577.0;
+	}
+}
+TRANSITION_LIST("operation_result[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 78.0;
+		LEVEL 0 FOR 82.0;
+		LEVEL 1 FOR 118.0;
+		LEVEL 0 FOR 459.0;
+	}
+}
+TRANSITION_LIST("operation_result[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("pwm_out")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 852.0;
+		LEVEL 0 FOR 147.0;
+	}
+}
+TRANSITION_LIST("second_operand[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("second_operand[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 423.0;
+		LEVEL 1 FOR 577.0;
+	}
+}
+TRANSITION_LIST("second_operand[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 737.0;
+	}
+}
+TRANSITION_LIST("second_operand[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 343.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 577.0;
+	}
+}
+TRANSITION_LIST("second_operand[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 457.0;
+	}
+}
+TRANSITION_LIST("second_operand[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 457.0;
+	}
+}
+TRANSITION_LIST("second_operand[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 263.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 457.0;
+	}
+}
+TRANSITION_LIST("second_operand[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("set_operator")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 261.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 457.0;
+	}
+}
+TRANSITION_LIST("stack_pop")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 261.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 457.0;
+	}
+}
+TRANSITION_LIST("stack_push")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 29.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 29.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 39.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 59.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 39.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 62.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 78.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 118.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 455.0;
 	}
 }
 
