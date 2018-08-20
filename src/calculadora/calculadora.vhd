@@ -21,49 +21,29 @@ entity calculadora is
 		hex3     : out std_logic_vector(6 downto 0);
 		hex2     : out std_logic_vector(6 downto 0);
 		hex1     : out std_logic_vector(6 downto 0);
-		hex0     : out std_logic_vector(6 downto 0);
-		
-		stack_push_value   : buffer signed(sizeof_operand - 1 downto 0);
-		stack_push         : buffer std_logic;
-		stack_pop          : buffer std_logic;
-		 
-		set_operator       : buffer std_logic;
-		operator           : buffer std_logic_vector(1 downto 0);
-		first_operand      : buffer signed(sizeof_operand - 1 downto 0);
-		second_operand     : buffer signed(sizeof_operand - 1 downto 0);
-		operation_result   : buffer signed(sizeof_operand - 1 downto 0);
-		operation_overflow : buffer std_logic;
-		 
-		bcd_result         : buffer std_logic_vector(sizeof_display_array * 4 - 1 downto 0);
-		hex3_result_sign   : buffer std_logic_vector(6 downto 0);
-		hex2_result        : buffer std_logic_vector(6 downto 0);
-		hex1_result        : buffer std_logic_vector(6 downto 0);
-		hex0_result        : buffer std_logic_vector(6 downto 0);
-		 
-		pwm_out            : buffer std_logic;
-		pwm_out_vector     : buffer std_logic_vector(6 downto 0));
+		hex0     : out std_logic_vector(6 downto 0));
 end calculadora;
 
 architecture behavior of calculadora is
-	--signal stack_push_value   : signed(sizeof_operand - 1 downto 0);
-	--signal stack_push         : std_logic;
-	--signal stack_pop          : std_logic;
+	signal stack_push_value   : signed(sizeof_operand - 1 downto 0);
+	signal stack_push         : std_logic;
+	signal stack_pop          : std_logic;
 	
-	--signal set_operator       : std_logic;
-	--signal operator           : std_logic_vector(1 downto 0);
-	--signal first_operand      : signed(sizeof_operand - 1 downto 0);
-	--signal second_operand     : signed(sizeof_operand - 1 downto 0);
-	--signal operation_result   : signed(sizeof_operand - 1 downto 0);
-	--signal operation_overflow : std_logic;
+	signal set_operator       : std_logic;
+	signal operator           : std_logic_vector(1 downto 0);
+	signal first_operand      : signed(sizeof_operand - 1 downto 0);
+	signal second_operand     : signed(sizeof_operand - 1 downto 0);
+	signal operation_result   : signed(sizeof_operand - 1 downto 0);
+	signal operation_overflow : std_logic;
 	
-	--signal bcd_result         : std_logic_vector(sizeof_display_array * 4 - 1 downto 0);
-	--signal hex3_result_sign   : std_logic_vector(6 downto 0);
-	--signal hex2_result        : std_logic_vector(6 downto 0);
-	--signal hex1_result        : std_logic_vector(6 downto 0);
-	--signal hex0_result        : std_logic_vector(6 downto 0);
+	signal bcd_result         : std_logic_vector(sizeof_display_array * 4 - 1 downto 0);
+	signal hex3_result_sign   : std_logic_vector(6 downto 0);
+	signal hex2_result        : std_logic_vector(6 downto 0);
+	signal hex1_result        : std_logic_vector(6 downto 0);
+	signal hex0_result        : std_logic_vector(6 downto 0);
 	
-	--signal pwm_out            : std_logic;
-	--signal pwm_out_vector     : std_logic_vector(6 downto 0);
+	signal pwm_out            : std_logic;
+	signal pwm_out_vector     : std_logic_vector(6 downto 0);
 begin
 	-- exibir sinal negativo no display #3 caso o numero seja negativo
 	hex3_result_sign <= operation_result(operation_result'high) & "000000";
