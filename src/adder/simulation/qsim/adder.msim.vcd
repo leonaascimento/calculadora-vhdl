@@ -3,7 +3,7 @@ $comment
 		vcd file adder.msim.vcd -direction
 $end
 $date
-	Mon Aug 13 18:36:51 2018
+	Sun Aug 19 17:08:32 2018
 $end
 $version
 	ModelSim Version 10.1d
@@ -31,54 +31,57 @@ $var wire 1 / unknown $end
 $var tri1 1 0 devclrn $end
 $var tri1 1 1 devpor $end
 $var tri1 1 2 devoe $end
-$var wire 1 3 Add0~0_combout $end
-$var wire 1 4 Add0~1 $end
-$var wire 1 5 Add0~2_combout $end
-$var wire 1 6 Add0~3 $end
-$var wire 1 7 Add0~4_combout $end
-$var wire 1 8 Add0~5 $end
-$var wire 1 9 Add0~6_combout $end
-$var wire 1 : Add0~7 $end
-$var wire 1 ; Add0~8_combout $end
-$var wire 1 < Add0~9 $end
-$var wire 1 = Add0~10_combout $end
-$var wire 1 > Add0~11 $end
-$var wire 1 ? Add0~12_combout $end
-$var wire 1 @ Add0~13 $end
-$var wire 1 A Add0~14_combout $end
-$var wire 1 B overflow~0_combout $end
-$var wire 1 C second~combout [7] $end
-$var wire 1 D second~combout [6] $end
-$var wire 1 E second~combout [5] $end
-$var wire 1 F second~combout [4] $end
-$var wire 1 G second~combout [3] $end
-$var wire 1 H second~combout [2] $end
-$var wire 1 I second~combout [1] $end
-$var wire 1 J second~combout [0] $end
-$var wire 1 K first~combout [7] $end
-$var wire 1 L first~combout [6] $end
-$var wire 1 M first~combout [5] $end
-$var wire 1 N first~combout [4] $end
-$var wire 1 O first~combout [3] $end
-$var wire 1 P first~combout [2] $end
-$var wire 1 Q first~combout [1] $end
-$var wire 1 R first~combout [0] $end
+$var wire 1 3 sum~0_combout $end
+$var wire 1 4 sum~1_combout $end
+$var wire 1 5 carry[2]~8_combout $end
+$var wire 1 6 sum~2_combout $end
+$var wire 1 7 carry[3]~9_combout $end
+$var wire 1 8 carry[3]~10_combout $end
+$var wire 1 9 sum~3_combout $end
+$var wire 1 : carry[4]~11_combout $end
+$var wire 1 ; sum~4_combout $end
+$var wire 1 < carry[5]~13_combout $end
+$var wire 1 = carry[5]~15_combout $end
+$var wire 1 > carry[5]~12_combout $end
+$var wire 1 ? sum~5_combout $end
+$var wire 1 @ carry[6]~14_combout $end
+$var wire 1 A sum~6_combout $end
+$var wire 1 B overflow~2_combout $end
+$var wire 1 C sum~7_combout $end
+$var wire 1 D overflow~3_combout $end
+$var wire 1 E overflow~4_combout $end
+$var wire 1 F second~combout [7] $end
+$var wire 1 G second~combout [6] $end
+$var wire 1 H second~combout [5] $end
+$var wire 1 I second~combout [4] $end
+$var wire 1 J second~combout [3] $end
+$var wire 1 K second~combout [2] $end
+$var wire 1 L second~combout [1] $end
+$var wire 1 M second~combout [0] $end
+$var wire 1 N first~combout [7] $end
+$var wire 1 O first~combout [6] $end
+$var wire 1 P first~combout [5] $end
+$var wire 1 Q first~combout [4] $end
+$var wire 1 R first~combout [3] $end
+$var wire 1 S first~combout [2] $end
+$var wire 1 T first~combout [1] $end
+$var wire 1 U first~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b11 !
-b10 "
-0#
-1+
+b1111111 !
+b1 "
+1#
+0+
 0*
-1)
+0)
 0(
 0'
 0&
 0%
-0$
+1$
 x,
 0-
 1.
@@ -86,9 +89,9 @@ x/
 10
 11
 12
-13
+03
 04
-05
+15
 06
 17
 08
@@ -96,27 +99,30 @@ x/
 1:
 0;
 0<
-0=
+1=
 1>
 0?
-0@
+1@
 0A
-1B
+0B
+1C
+1D
+0E
+1M
+0L
+0K
 0J
-1I
+0I
 0H
 0G
 0F
-0E
-0D
-0C
+1U
+1T
+1S
 1R
 1Q
-0P
-0O
+1P
+1O
 0N
-0M
-0L
-0K
 $end
 #1000000

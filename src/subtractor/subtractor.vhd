@@ -2,19 +2,32 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- realizar subtracao
 entity subtractor is
-	generic (bit_size : natural := 8);
-	port (first, second : in signed(bit_size - 1 downto 0);
-			result : out signed(bit_size - 1 downto 0);
-			overflow : out std_logic);
+	generic (
+		sizeof_operand : natural := 8);
+	port (
+		first, second : in  signed(sizeof_operand - 1 downto 0);
+		result        : out signed(sizeof_operand - 1 downto 0);
+		overflow      : out std_logic);
 end subtractor;
 
 architecture behavior of subtractor is
-	signal aux_result : signed(bit_size - 1 downto 0);
+	signal diff   : signed(sizeof_operand - 1 downto 0);
+	signal borrow : std_logic_vector(sizeof_operand + 1 downto 0) := (others => '0');
 begin
-	aux_result <= first - second;
-	result <= aux_result;
-	
-	overflow <= (first(first'high) xor second(second'high)) and
-					(first(first'high) xor aux_result(aux_result'high));
+	result <= diff;
+	overflow <= (first(first'high) xor second(second'high))
+		and (first(first'high) xor diff(diff'high));
+					
+	process(first, second, borrow)
+	begin
+		for i in diff'reverse_range loop
+			diff(i) <= (first(i) xor second(i))
+				xor borrow(i);
+				
+			borrow(i + 1) <= ((not first(i)) and second(i))
+				or (borrow(i) and (not (first(i) xor second(i))));
+		end loop;
+	end process;
 end behavior;

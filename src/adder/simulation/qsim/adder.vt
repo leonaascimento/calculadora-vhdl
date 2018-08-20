@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/13/2018 18:36:48"
+// Generated on "08/19/2018 17:08:29"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    adder
 // 
@@ -330,27 +330,27 @@ end
 // first[ 6 ]
 initial
 begin
-	first[6] = 1'b0;
+	first[6] = 1'b1;
 end 
 // first[ 5 ]
 initial
 begin
-	first[5] = 1'b0;
+	first[5] = 1'b1;
 end 
 // first[ 4 ]
 initial
 begin
-	first[4] = 1'b0;
+	first[4] = 1'b1;
 end 
 // first[ 3 ]
 initial
 begin
-	first[3] = 1'b0;
+	first[3] = 1'b1;
 end 
 // first[ 2 ]
 initial
 begin
-	first[2] = 1'b0;
+	first[2] = 1'b1;
 end 
 // first[ 1 ]
 initial
@@ -395,12 +395,12 @@ end
 // second[ 1 ]
 initial
 begin
-	second[1] = 1'b1;
+	second[1] = 1'b0;
 end 
 // second[ 0 ]
 initial
 begin
-	second[0] = 1'b0;
+	second[0] = 1'b1;
 end 
 
 adder_vlg_sample_tst tb_sample (

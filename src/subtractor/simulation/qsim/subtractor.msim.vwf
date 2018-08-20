@@ -372,7 +372,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~0_combout")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -382,7 +382,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~1")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -392,7 +392,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~1")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~2_combout")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~2_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -402,7 +402,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~3")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~3_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -412,7 +412,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~3")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~4_combout")
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[4]~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,7 +422,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~4_combout")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~5")
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[4]~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -432,7 +432,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~5")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~6_combout")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~4_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -442,7 +442,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~6_combout")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~7")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~5_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -452,7 +452,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~7")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~8_combout")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~6_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -462,7 +462,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~9")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~7_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -472,47 +472,7 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~9")
 	PARENT = "";
 }
 
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~10_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~11")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~12_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~13")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("subtractor_vlg_vec_tst|i1|Add0~14_combout")
+SIGNAL("subtractor_vlg_vec_tst|i1|diff~8_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -523,6 +483,106 @@ SIGNAL("subtractor_vlg_vec_tst|i1|Add0~14_combout")
 }
 
 SIGNAL("subtractor_vlg_vec_tst|i1|overflow~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("subtractor_vlg_vec_tst|i1|borrow[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -706,7 +766,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|first[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -715,7 +775,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|first[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -724,7 +784,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|first[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -733,7 +793,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|first[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -751,7 +811,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|first[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -760,7 +820,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|first[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -778,7 +838,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|second[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -805,7 +865,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|second[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -814,7 +874,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|second[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -832,7 +892,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|second[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -868,7 +928,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|result[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -877,7 +937,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|result[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -980,7 +1040,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~0_combout")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~0_combout")
 {
 	NODE
 	{
@@ -989,16 +1049,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~0_combout")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~2_combout")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~1_combout")
 {
 	NODE
 	{
@@ -1007,7 +1058,43 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~2_combout")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~3")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[4]~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[4]~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~4_combout")
 {
 	NODE
 	{
@@ -1016,16 +1103,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~3")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~5")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~5_combout")
 {
 	NODE
 	{
@@ -1034,7 +1112,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~5")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~6_combout")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~6_combout")
 {
 	NODE
 	{
@@ -1043,7 +1121,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~6_combout")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~7")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~7_combout")
 {
 	NODE
 	{
@@ -1052,61 +1130,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~7")
 	}
 }
 
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~9")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~11")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~12_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~13")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("subtractor_vlg_vec_tst|i1|Add0~14_combout")
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|diff~8_combout")
 {
 	NODE
 	{
@@ -1124,6 +1148,96 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|overflow~0_combout")
 	}
 }
 
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("subtractor_vlg_vec_tst|i1|borrow[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
 TRANSITION_LIST("subtractor_vlg_vec_tst|i1|second~combout[7]")
 {
 	NODE
@@ -1138,7 +1252,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|second~combout[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1165,7 +1279,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|second~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1174,7 +1288,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|second~combout[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1192,7 +1306,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|second~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1210,7 +1324,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|first~combout[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1219,7 +1333,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|first~combout[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1228,7 +1342,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|first~combout[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1237,7 +1351,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|first~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1255,7 +1369,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|first~combout[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1264,7 +1378,7 @@ TRANSITION_LIST("subtractor_vlg_vec_tst|i1|first~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1594,7 +1708,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~0_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -1603,7 +1717,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~1";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -1612,7 +1726,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~2_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -1621,7 +1735,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~3";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -1630,7 +1744,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~4_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[4]~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -1639,7 +1753,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~5";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[4]~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -1648,7 +1762,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~6_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~4_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -1657,7 +1771,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~7";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~5_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -1666,7 +1780,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~8_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~6_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -1675,7 +1789,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~9";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~7_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -1684,7 +1798,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~10_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|diff~8_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -1693,7 +1807,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~11";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|overflow~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -1702,7 +1816,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~12_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -1711,7 +1825,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~13";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -1720,7 +1834,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|Add0~14_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -1729,7 +1843,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|overflow~0_combout";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -1738,7 +1852,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[7]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -1747,7 +1861,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[6]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -1756,7 +1870,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[5]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -1765,7 +1879,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[4]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -1774,7 +1888,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[3]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -1783,7 +1897,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[2]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|borrow[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -1792,7 +1906,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[1]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -1801,7 +1915,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[0]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -1810,7 +1924,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[7]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -1819,7 +1933,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[6]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -1828,7 +1942,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[5]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -1837,7 +1951,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[4]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -1846,7 +1960,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[3]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -1855,7 +1969,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[2]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|second~combout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -1864,7 +1978,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[1]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -1873,10 +1987,64 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[0]";
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "subtractor_vlg_vec_tst|i1|first~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 71;
 	TREE_LEVEL = 0;
 }
 ;

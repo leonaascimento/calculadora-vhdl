@@ -152,6 +152,36 @@ SIGNAL("second[0]")
 	PARENT = "second";
 }
 
+SIGNAL("first[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "first";
+}
+
+SIGNAL("result[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "result";
+}
+
+SIGNAL("second[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "second";
+}
+
 SIGNAL("first[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -183,16 +213,6 @@ SIGNAL("first[5]")
 }
 
 SIGNAL("first[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "first";
-}
-
-SIGNAL("first[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -252,16 +272,6 @@ SIGNAL("result[4]")
 	PARENT = "result";
 }
 
-SIGNAL("result[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "result";
-}
-
 SIGNAL("second[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -302,16 +312,6 @@ SIGNAL("second[4]")
 	PARENT = "second";
 }
 
-SIGNAL("second[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "second";
-}
-
 TRANSITION_LIST("first[2]")
 {
 	NODE
@@ -326,7 +326,7 @@ TRANSITION_LIST("first[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -371,7 +371,7 @@ TRANSITION_LIST("second[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -389,7 +389,34 @@ TRANSITION_LIST("second[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("first[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("result[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("second[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -398,7 +425,7 @@ TRANSITION_LIST("first[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -407,7 +434,7 @@ TRANSITION_LIST("first[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -421,15 +448,6 @@ TRANSITION_LIST("first[5]")
 }
 
 TRANSITION_LIST("first[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("first[3]")
 {
 	NODE
 	{
@@ -483,15 +501,6 @@ TRANSITION_LIST("result[4]")
 	}
 }
 
-TRANSITION_LIST("result[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
 TRANSITION_LIST("second[7]")
 {
 	NODE
@@ -506,7 +515,7 @@ TRANSITION_LIST("second[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -515,7 +524,7 @@ TRANSITION_LIST("second[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -524,16 +533,7 @@ TRANSITION_LIST("second[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("second[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
